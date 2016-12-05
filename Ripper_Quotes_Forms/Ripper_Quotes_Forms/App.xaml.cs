@@ -12,7 +12,7 @@ namespace Ripper_Quotes_Forms
 		public App ()
 		{
 			InitializeComponent();
-			MainPage = new Ripper_Quotes_Forms.MainPage();
+            MainPage = new NavigationPage(new MainPage());
 		}
 
 		protected override void OnStart ()

@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Ripper_Quotes_Forms"
-             x:Class="Ripper_Quotes_Forms.MainPage">
+             x:Class="Ripper_Quotes_Forms.MainPage"
+             Title="Ripper Quotes">
   <ContentPage.Content>
     <Grid>
     <Grid.RowDefinitions>
@@ -19,7 +20,7 @@
                   <RowDefinition Height="25"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Label Text="{Binding QuoteTextPresent}" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="0"></Label>
-              <Label Text="{Binding QuoteAuthorPresent}" FontSize="15" Grid.Row="1"></Label>
+              <Label Text="{Binding QuoteAuthorPresent}" FontSize="15" HorizontalTextAlignment="End" Grid.Row="1"></Label>
               </Grid>
             </ViewCell>
           </DataTemplate>
