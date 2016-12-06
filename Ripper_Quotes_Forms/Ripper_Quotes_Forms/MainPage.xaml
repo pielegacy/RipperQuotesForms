@@ -10,17 +10,17 @@
       <RowDefinition Height="*"/>
       <RowDefinition Height="20"/>
     </Grid.RowDefinitions>
-      <ListView x:Name="QuoteList" Grid.Row="0" BackgroundColor="Transparent">
+      <ListView x:Name="QuoteList" Grid.Row="0">
         <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>
-              <Grid BackgroundColor="White" Padding="5,10">
+              <Grid Padding="5,10" Margin="0,2">
                 <Grid.RowDefinitions>
                   <RowDefinition Height="Auto"></RowDefinition>
                   <RowDefinition Height="25"></RowDefinition>
                 </Grid.RowDefinitions>
-                <Label Text="{Binding QuoteTextPresent}" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="0"></Label>
-              <Label Text="{Binding QuoteAuthorPresent}" FontSize="15" HorizontalTextAlignment="End" Grid.Row="1"></Label>
+                <Label Text="{Binding QuoteTextPresent}" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" Grid.Row="0"></Label>
+              <Label Text="{Binding QuoteAuthorPresent}" FontSize="15" TextColor="Black" HorizontalTextAlignment="End" Grid.Row="1"></Label>
               </Grid>
             </ViewCell>
           </DataTemplate>

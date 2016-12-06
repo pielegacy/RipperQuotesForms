@@ -15,7 +15,9 @@ namespace Ripper_Quotes_Forms
 		{
 			InitializeComponent();
             QuoteList.HasUnevenRows = true;
-		}
+            QuoteList.SeparatorVisibility = SeparatorVisibility.None;
+            NavigationPage.SetTitleIcon(this, "");
+        }
         protected async override void OnAppearing()
         {
             base.OnAppearing();

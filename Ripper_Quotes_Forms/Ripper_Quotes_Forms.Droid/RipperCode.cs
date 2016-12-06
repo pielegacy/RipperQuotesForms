@@ -27,6 +27,9 @@ namespace RipperQuotes
                 return $"~ {QuoteAuthor}";
             }
         }
+        [JsonConstructor]
+        public Quote()
+        { }
     }
     public class RipperCon
     {
