@@ -117,7 +117,6 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RipperCode.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -131,7 +130,7 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\Values\styles.xml" />
+    <Folder Include="Resources\Values\" />
   </ItemGroup>
   <Import Project="..\Ripper_Quotes_Forms\Ripper_Quotes_Forms.projitems" Label="Shared" Condition="Exists('..\Ripper_Quotes_Forms\Ripper_Quotes_Forms.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

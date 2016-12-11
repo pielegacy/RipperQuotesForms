@@ -8,6 +8,9 @@
       <Style TargetType="ContentPage">
         <Setter Property="BackgroundColor" Value="White"/>
       </Style>
+      <Style TargetType="ListView">
+        <Setter Property="BackgroundColor" Value="White"/>
+      </Style>
       <Style TargetType="Label">
         <Setter Property="FontFamily" Value="Times New Roman"/>
         <Setter Property="TextColor" Value="Black"/>

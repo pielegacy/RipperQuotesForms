@@ -19,21 +19,22 @@ namespace RipperQuotes
         private List<Quote> _quotes = new List<Quote>();
         public RipperCon()
         {
-            
+
         }
         public async Task<string> DownloadJson()
         {
             string jsonString;
             using (HttpClient client = new HttpClient())
             {
-               jsonString = await client.GetStringAsync(new Uri("http://ripperquotes.azurewebsites.net/api/QuotesApi"));
+                jsonString = await client.GetStringAsync(new Uri("http://ripperquotes.azurewebsites.net/api/QuotesApi"));
             }
             _quotes = JsonConvert.DeserializeObject<List<Quote>>(jsonString);
             return jsonString;
         }
         public List<Quote> Quotes
         {
-            get {
+            get
+            {
                 return _quotes;
             }
         }
