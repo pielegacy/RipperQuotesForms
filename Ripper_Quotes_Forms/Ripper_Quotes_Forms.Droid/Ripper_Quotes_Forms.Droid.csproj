@@ -130,7 +130,10 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\Values\" />
+    <AndroidResource Include="Resources\Values\style.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Values\colors.xml" />
   </ItemGroup>
   <Import Project="..\Ripper_Quotes_Forms\Ripper_Quotes_Forms.projitems" Label="Shared" Condition="Exists('..\Ripper_Quotes_Forms\Ripper_Quotes_Forms.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

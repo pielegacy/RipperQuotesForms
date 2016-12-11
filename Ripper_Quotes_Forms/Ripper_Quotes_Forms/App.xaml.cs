@@ -12,12 +12,7 @@ namespace Ripper_Quotes_Forms
 		public App ()
 		{
 			InitializeComponent();
-            MainPage = new NavigationPage(new MainPage())
-            {
-                BarBackgroundColor = Color.FromHex("#fc00ff"),
-                BarTextColor = Color.White,
-                HeightRequest = 30
-            };
+            MainPage = new NavigationPage(new MainPage());
 		}
 
 		protected override void OnStart ()
