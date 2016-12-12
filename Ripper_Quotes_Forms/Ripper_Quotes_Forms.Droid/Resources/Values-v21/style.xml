@@ -1,7 +1,11 @@
 ﻿<resources>
   <style name="MainTheme" parent="MainTheme.Base">
-    <item name="android:statusBarColor">#E91E63</item>
-    <item name="android:navigationBarColor">#E91E63</item>
-    <item name="colorPrimary">#E91E63</item>
+    <item name="android:statusBarColor">@color/primary</item>
+    <item name="android:navigationBarColor">@color/primaryDark</item>
+    <item name="colorPrimary">@color/primary</item>
+    <item name="android:actionBarStyle">@style/AppBarColor</item>
+  </style>
+  <style name="AppBarColor" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+    <item name="android:background">@color/primary</item>
   </style>
 </resources>
